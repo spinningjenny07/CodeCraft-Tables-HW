@@ -2,6 +2,25 @@
 <html lang="en-us">
 <head>
 	<title>Tables Practice</title>
+	<style>
+		table {
+			background-color: cornflowerblue;
+			color: #FFFFFF;
+			border-color: rgb(255, 128, 128);
+		}
+
+		td, th {
+			/*border-style: solid;
+			border-color: green;
+			border-width: 3;*/
+			border: 3px solid green;
+			border-radius: 10px;
+		}
+
+		th {
+			border-color: #FF6600;
+		}
+	</style>
 </head>
 <body>
 	<p>The instructions for this assignment are written in HTML comments.</p>
@@ -12,7 +31,7 @@
 	-->
 	<table border="1">
 		<!-- TODO Add a caption to this table, "2015 Chili Cook-Off Team Scores" -->
-		<caption>2015 Chili Cook-Off Team Scores</caption>
+		<tcaption>2015 Chili Cook-Off Team Scores</tcaption>
 		<thead>
 			<tr>
 				<th>Team Name</th>
@@ -22,7 +41,6 @@
 		</thead>
 		<tfoot>
 			<tr>
-				<!-- TODO Get rid of the empty column in this row -->
 				<td>All Teams Total Score:</td>
 				<td colspan="2">417</td>
 			</tr>
